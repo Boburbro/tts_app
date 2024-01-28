@@ -1,0 +1,1 @@
+ /run/media/comptex/D/my_data/tts/.dart_tool/flutter_build/8d2e6e7f0b5458dae067b944cf2373f9/native_assets.yaml: 
