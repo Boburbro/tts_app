@@ -1,12 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:tts/servise.dart';
 
 // ignore: must_be_immutable
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   Home({super.key});
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  BannerAd? _banner;
+
   final FlutterTts flutterTts = FlutterTts();
+
   TextEditingController tts = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _createBanner();
+  }
+
+  void _createBanner() {
+    _banner = BannerAd(
+      size: AdSize.fullBanner,
+      adUnitId: MobileAdsManager.unitBanner,
+      listener: MobileAdsManager.adsListener,
+      request: const AdRequest(),
+    )..load();
+  }
 
   speek(String text) async {
     if (text.isEmpty) {
@@ -46,6 +71,13 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: _banner == null
+          ? Container()
+          : Container(
+              margin: const EdgeInsets.only(bottom: 12),
+              height: 52,
+              child: AdWidget(ad: _banner!),
+            ),
     );
   }
 }

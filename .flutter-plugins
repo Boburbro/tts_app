@@ -1,7 +1,11 @@
 # This is a generated file; do not edit or check into version control.
 flutter_tts=/home/comptex/.pub-cache/hosted/pub.dev/flutter_tts-3.8.5/
+google_mobile_ads=/home/comptex/.pub-cache/hosted/pub.dev/google_mobile_ads-4.0.0/
 path_provider=/home/comptex/.pub-cache/hosted/pub.dev/path_provider-2.1.2/
 path_provider_android=/home/comptex/.pub-cache/hosted/pub.dev/path_provider_android-2.2.2/
 path_provider_foundation=/home/comptex/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2/
 path_provider_linux=/home/comptex/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
 path_provider_windows=/home/comptex/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
+webview_flutter=/home/comptex/.pub-cache/hosted/pub.dev/webview_flutter-4.5.0/
+webview_flutter_android=/home/comptex/.pub-cache/hosted/pub.dev/webview_flutter_android-3.15.0/
+webview_flutter_wkwebview=/home/comptex/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.10.2/
